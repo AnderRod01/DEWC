@@ -8,7 +8,7 @@ let elep_screen = document.createElement("p");
 elep_screen.innerHTML = "La resolución de la pantalla es "+ ancho + " x " + altura;
 document.body.appendChild(elep_screen);
 
-let navegador = navigator.appName
+let navegador = navigator.appName;
 let sistema = navigator.platform;
 let version = navigator.appVersion;
 
