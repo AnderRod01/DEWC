@@ -6,8 +6,6 @@ function cerrarVentanas (){
 
 
 function abrirVentanas(){
-
-
     for (let i= 0; i<5; i++){
         if (ventanas[i] != null){
             ventanas[i].close();
