@@ -1,18 +1,16 @@
-let date = new Date();
+let fecha = new Date();
+let anio = 1990;
+fecha = fecha.getTime();
 
-let fecNacimiento = prompt("Introduce tu fecha de nacimiento  (aaaa/mm/dd)")
+let comienzo = new Date(anio,1,1).getTime();
 
-let arrFec = fecNacimiento.split('/');
-
-dateNac = new Date(arrFec[0], arrFec[1], arrFec[2]);
-
-
-
-let aniosDesde1970 = date-dateNac;
+let dias = (fecha-comienzo)/(1000*3600*24); 
+let horas = (dias-Math.floor(dias)) * 24;
+let min = (horas-Math.floor(horas)) * 60;  
+let seg = Math.floor((min-Math.floor(min)) * 60); 
 
 
-let edad=new Date(aniosDesde1970).getFullYear()-1970;
 
-let elep  = document.createElement("p");
-elep.innerHTML="Tienes " + edad + " años";
+let elep=document.createElement("p");
+elep.innerHTML="Desde el "+anio+" han pasado "+ Math.floor(dias)+"dias "+Math.floor(horas)+"h "+Math.floor(min)+"min "+seg+"s";
 document.body.appendChild(elep);
