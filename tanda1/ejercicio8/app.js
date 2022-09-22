@@ -1,6 +1,6 @@
 let nom = prompt("Introduce Número:");
 let fact = 1
-for (cont =1; cont<=nom; cont++){
+for (let cont =1; cont<=nom; cont++){
     fact = fact * cont;
 }
 
