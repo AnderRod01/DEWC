@@ -47,9 +47,6 @@ function resolver(){
         operacion = operacion.substr(0, operacion.length-1);
 
     }
-    // if (operacion.length ==1){
-    //     operacion =0;
-    // }
     if(operacion=="")
         operacion=0;
     if (primerChar=='*' || primerChar=='/' || primerChar =='+' || primerChar =='-'){
