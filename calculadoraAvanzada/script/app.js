@@ -135,7 +135,8 @@ function resolver(){
     }
 
     if (esRaiz){
-        eleInputText_txtCalc.value = Function ("return Math.sqrt(" + operacion+")")();
+        operacion = Math.sqrt(operacion)
+        eleInputText_txtCalc.value = Function("return " + operacion)();
         esRaiz = false
     }
     else if (esInverso){
