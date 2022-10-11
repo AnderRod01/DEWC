@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <div>  
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" name="txtNombre" id="txtNombre" placeholder="Escribe tu nombre">
+        </div>
+
+        <div>  
+            <label for="txtEmail">Email:</label>
+            <input type="text" name="txtEmail" id="txtEmail" placeholder="Escribe tu email">
+        </div>
+
+        <div>
+            <label for="selAsunto">Asunto:</label>
+            <select name="selAsunto" id="selAsunto">
+                <option value="info">Solicitar información</option>
+                <option value="curso">Apuntarse a un curso</option>
+                <option value="otro">Otros</option>
+            </select>
+        </div>
+
+        <div id="curso" style="display: none;">
+            <label for="txtCurso">Curso:</label>
+            <input type="text" name="txtCurso" id="txtCurso">
+        </div>
+
+        <div>
+            <label for="txtMensaje">Escribe un mensaje:</label>
+            <input type="text" name="txtMensaje" id="txtMensaje">
+        </div>
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
