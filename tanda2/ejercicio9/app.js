@@ -2,7 +2,7 @@ let ventana;
 
 function abrirGoogle (){
    
-    ventana.close(); 
+    ventana.close();
     window.location.href = "https://www.google.es/";
     
 }
