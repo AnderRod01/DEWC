@@ -1,5 +1,4 @@
-//window.open(url,'_blank');
-//                 window.open("./thankyou.html")
+
 let eleChkbox_TOS
 let eleTxt_dni, eleTxt_nombre, eleTxt_apellido, eleTxt_direccion, eleTxt_email, eleTxt_telefono
 let territorio = ["Seleccione territorio", "Euskadi", "Nafarroa", "Iparralde"]
