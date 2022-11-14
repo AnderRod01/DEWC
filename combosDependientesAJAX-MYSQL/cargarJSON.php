@@ -2,7 +2,7 @@
 	$hostname = "localhost";
 	$database = "pais";
 	$username = "root";
-	$password = "root";
+	$password = "";
 	foreach ($_POST as $key => $value){
         if (empty($value)) {
                $value="";
@@ -25,7 +25,7 @@
 		$sql="select id_municipio as codigo, nombre from municipios where id_provincia=".$codigo_provincia;
 	}
 	if (!$rs=mysqli_query($conexion,$sql)){
-	 	die(mysqli_error($con));
+	 	die(mysqli_error($conexion));
 	}
 	
 	$i=0;

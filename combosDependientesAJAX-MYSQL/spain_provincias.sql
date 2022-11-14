@@ -17,7 +17,7 @@
 CREATE TABLE `provincias` (
   `id_provincia` smallint(6) DEFAULT NULL,
   `provincia` varchar(30) DEFAULT NULL
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `provincias` (`id_provincia`, `provincia`)
 VALUES
