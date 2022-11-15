@@ -11,7 +11,7 @@
 //     }
 
 //     let options = {
-//         method: HTTPS_METHOD.POST,
+//         method: "POST",
 //         headers: { "Content-type": "application/json; charset=UTF-8" },
 //         body : JSON.stringify(parameters)
 //     };
@@ -33,7 +33,7 @@ window.onload = function(){
 
     cargarProvincias()
     console.log(combo_provincia.options)
-    combo_provincia.onchange = ()=> cargarMunicipios(combo_provincia.options[combo_provincia.selectedIndex].value)
+    combo_provincia.onchange = () => cargarMunicipios(combo_provincia.options[combo_provincia.selectedIndex].value)
     
 }
 

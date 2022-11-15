@@ -5,6 +5,7 @@ window.onload = function(){
     combo_provincia = document.getElementById("provincia")
     eleDiv_mensaje = document.getElementById("mensaje")
 
+
     cargarProvincias()
     console.log(combo_provincia.options)
     combo_provincia.onchange = ()=> cargarMunicipios(combo_provincia.options[combo_provincia.selectedIndex].value)
@@ -27,10 +28,12 @@ function cargarProvincias (){
     .then(json => {
         console.log(json);
         combo_provincia.innerHTML = ''
+
         let provincia = document.createElement('option');
         provincia.value = "0"
         provincia.innerText = "- Elige Opcion -"
         combo_provincia.appendChild(provincia)
+
         for (const key in json) {
 
             let provincia = document.createElement('option');
